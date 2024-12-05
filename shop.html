@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Grid</title>
+    <!-- SLCIK SLIDER START -->
+    <link rel="stylesheet" href="./asstes/css/slick.min.css" />
+    <!-- SLCIK SLIDER END -->
+    <!-- GOOGLE FONTS START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE FONTS END -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONTAWESOME CSS -->
+    <link rel="stylesheet" href="asstes/css/font-awesome-all.min.css" />
+    <!-- BOOTSTRAP 5.3 -->
+    <link rel="stylesheet" href="asstes/css/bootstrap.min.css" />
+
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="./asstes/css/style.css" />
+    <!--  RESPONSIVE CSS -->
+    <link rel="stylesheet" href="./asstes/css/responsive.css" />
+</head>
+<body>
+    <!-- ==================================<<<<<<<<<<About head START>>>>>>>>>>================================= -->
+    <section id="about-head">
+      <div class="container about-contains">
+        <div class="abouthead-text">
+          <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18.75 1.25L1.25 10L7.5 12.5M18.75 1.25L10 18.75L7.5 12.5M18.75 1.25L7.5 12.5" stroke="#FF6F61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg></span>
+          <h4>FREE SHIPING world wide for all orders over &nbsp; <b>$150</b></h4>
+        </div>
+    
+        <div class="abouthead-icons">
+          <ul>
+            <li class="head"><a href="#">Track Your Order</a></li>
+    
+            <li class="head"><a href="#">English <span><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.175 0.651245L5 3.96382L8.825 0.651245L10 1.67106L5 6.01068L0 1.67106L1.175 0.651245Z" fill="white" />
+    </svg></span></a>
+    
+    <ul class="language">
+      <li><a href="#">Bangla</a></li>
+      <li><a href="#">Bangla</a></li>
+      <li><a href="#">Bangla</a></li>
+      <li><a href="#">Bangla</a></li>
+      <li><a href="#">Bangla</a></li>
+    </ul>
+           </li>
+    
+            <li class="head">
+              <a href="#">USD <span><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.175 0.651245L5 3.96382L8.825 0.651245L10 1.67106L5 6.01068L0 1.67106L1.175 0.651245Z" fill="white" />
+    </svg></span></a>
+    
+    <ul class="currency">
+      <li><a href="#">Doller</a></li>
+      <li><a href="#">Doller</a></li>
+      <li><a href="#">Doller</a></li>
+      <li><a href="#">Doller</a></li>
+      <li><a href="#">Doller</a></li>
+    </ul>
+            </li>
+    
+            <li>
+              <ul class="socialmedia-icon">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i> </a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i> </a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  <!-- ===================================<<<<<<<<<<About head END>>>>>>>>>>================================== -->
+
+     <!-- ==================================<<<<<<<<<<NAVIGATION BAR START>>>>>>>>>>================================= -->
+    <section>
+
+
+    <nav class="navbar navbar-expand-lg shadow bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./asstes/Logo.png" alt="" />
+        </a>
+        <span
+          class="navbar-toggler"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <span>
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </span>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active hclr" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active hclr" aria-current="page" href="#"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active hclr" aria-current="page" href="#"
+                >Pages</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                id="dropdown"
+                class="nav-link active hclr"
+                aria-current="page"
+                href="#"
+                >Features
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+
+              <ul class="dropdown">
+                <li><a href="#">Features 1</a></li>
+                <li><a href="#">Features 2</a></li>
+                <li><a href="#">Features 3</a></li>
+                <li><a href="#">Features 4</a></li>
+                <li><a href="#">Features 5</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <ul class="icons">
+            <li class="search-icon">
+              <a href="#"
+                ><span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </a>
+            </li>
+            <li class="user_account">
+              <a href="#"
+                ><span><i class="fa-regular fa-user"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fa-regular fa-heart"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="fa-solid fa-bag-shopping"></i></span>
+                <span>0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+
+    <!-- ---SEARCH BAR START--- -->
+     <section id="search">
+      <div class="search-body">
+        <input placeholder="search here" type="text" />
+        <button>Search</button>
+      </div>
+
+      <div class="search-cross">
+        <i class="fa-solid fa-x"></i>
+      </div>
+    </section>
+    <!-- ---SEARCH BAR END--- -->
+
+    <!--=======================LOGIN FORM START ====================== -->
+    <section id="login_form">
+      <form action="#">
+        <h4>Login</h4>
+        <label for="email">Email</label
+        ><input type="email" placeholder="Enter Your E-mail" required />
+        <br />
+        <label for="Password">Password</label
+        ><input type="password" placeholder=" Password" required />
+        <div class="signup_btn">
+          <button class="login">LogIn</button>
+          <p>you have no account</p>
+          <button class="signup">SignUp</button>
+        </div>
+      </form>
+      <div class="login_cross">
+        <i class="fa-solid fa-x"></i>
+      </div>
+    </section>
+    <!--=======================LOGIN FORM END ====================== -->
+
+    <!--=======================SIGNUP FORM  START ====================== -->
+    <section id="signup_form">
+      <form action="#">
+        <h4>SignUp</h4>
+        <label for="name">Your First Name</label
+        ><input type="name" placeholder="Enter Your firstname" required />
+        <br />
+        <label for="name">Your Last Name</label
+        ><input type="name" placeholder="Enter Your  lastname" required />
+        <br />
+        <label for="email">Email</label
+        ><input type="email" placeholder="Enter Your E-mail" required />
+        <br />
+        <label for="Password">Create Password</label
+        ><input type="password" placeholder=" Create Password" required />
+        <label for="Password">Repassword</label
+        ><input type="password" placeholder=" Repassword" required />
+
+        <div class="signup_btn">
+          <button class="signup">SingUp</button>
+          <button class="login_reform">LogIn</button>
+
+          <p>you have no account</p>
+        </div>
+      </form>
+      <div class="signup_cross">
+        <i class="fa-solid fa-x"></i>
+      </div>
+    </section>
+
+    <!--=======================SIGNUP FORM END ====================== -->
+
+    <!-- ----OFFCANVAS START----- -->
+
+     <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <a class="navbar-brand" href="#">
+          <img src="./asstes/Logo.png" alt="" />
+        </a>
+        <div class="phn-search-cross" data-bs-dismiss="offcanvas">
+          <span class="hide-off"><i class="fa-solid fa-x"></i></span>
+        </div>
+
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link active hclr" aria-current="page" href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active hclr" aria-current="page" href="#"
+              >Shop</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active hclr" aria-current="page" href="#"
+              >Pages</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              id="phn-dropdown"
+              class="nav-link active hclr"
+              aria-current="page"
+              href="#"
+              >Features
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+
+            <ul class="phn-dropdown">
+              <li class="nav-item phn-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Features 1</a
+                >
+              </li>
+              <li class="nav-item phn-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Features 2</a
+                >
+              </li>
+              <li class="nav-item phn-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Features 3</a
+                >
+              </li>
+              <li class="nav-item phn-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Features 4</a
+                >
+              </li>
+              <li class="nav-item phn-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Features 5</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item phn-item">
+            <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+          </li>
+          <li class="nav-item phn-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="offcanvas-icons">
+        <li class="offcanvas-search-icon">
+          <a href="#"
+            ><span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            ><span><i class="fa-regular fa-user"></i></span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            ><span><i class="fa-regular fa-heart"></i></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span><i class="fa-solid fa-bag-shopping"></i></span>
+            <span class="off-icons">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ----OFFCANVAS END----- -->
+
+    <!-- ===================== NAV END ======================== -->
+
+    <!--=======================SEARCH FOOTER  START ====================== -->
+    <section id="search-footer" class="d-lg-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-2 mx-auto text-center">
+            <span class="search-footer">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!--=======================SEARCH FOOTER END ====================== -->
+    </section>
+     <!-- ===================================<<<<<<<<<<NAVIGATION BAR END>>>>>>>>>>================================== -->
+     
+        <!-- ==================================<<<<<<<<<<ABOUT BANNER START>>>>>>>>>>================================= -->
+    <section id="about-banner">
+  <div class="container about-section-contains">
+    <h2>Shop - Grid</h2>
+    <p><a href="#">Home</a> / Shop</p>
+  </div>
+    </section>
+        <!-- ===================================<<<<<<<<<<ABOUT BANNER END>>>>>>>>>>================================== -->
+
+     <!-- ==================================<<<<<<<<<<SHOP PRODUCT START>>>>>>>>>>================================= -->
+    <section id="shop">
+        <div class="container">
+          <div class="menu-btn-shop">
+
+            <div class="menu-icons">
+              <span><svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.25 3.24916C5.91848 3.24916 5.60054 3.38085 5.36612 3.61527C5.1317 3.84969 5 4.16764 5 4.49916C5 4.83068 5.1317 5.14862 5.36612 5.38304C5.60054 5.61746 5.91848 5.74916 6.25 5.74916C6.58152 5.74916 6.89946 5.61746 7.13388 5.38304C7.3683 5.14862 7.5 4.83068 7.5 4.49916C7.5 4.16764 7.3683 3.84969 7.13388 3.61527C6.89946 3.38085 6.58152 3.24916 6.25 3.24916ZM2.7125 3.24916C2.97075 2.51724 3.44967 1.88345 4.08325 1.43514C4.71683 0.986838 5.47386 0.746094 6.25 0.746094C7.02614 0.746094 7.78317 0.986838 8.41675 1.43514C9.05033 1.88345 9.52925 2.51724 9.7875 3.24916H18.75C19.0815 3.24916 19.3995 3.38085 19.6339 3.61527C19.8683 3.84969 20 4.16764 20 4.49916C20 4.83068 19.8683 5.14862 19.6339 5.38304C19.3995 5.61746 19.0815 5.74916 18.75 5.74916H9.7875C9.52925 6.48107 9.05033 7.11487 8.41675 7.56317C7.78317 8.01148 7.02614 8.25222 6.25 8.25222C5.47386 8.25222 4.71683 8.01148 4.08325 7.56317C3.44967 7.11487 2.97075 6.48107 2.7125 5.74916H1.25C0.918479 5.74916 0.600537 5.61746 0.366117 5.38304C0.131696 5.14862 0 4.83068 0 4.49916C0 4.16764 0.131696 3.84969 0.366117 3.61527C0.600537 3.38085 0.918479 3.24916 1.25 3.24916H2.7125ZM13.75 10.7492C13.4185 10.7492 13.1005 10.8809 12.8661 11.1153C12.6317 11.3497 12.5 11.6676 12.5 11.9992C12.5 12.3307 12.6317 12.6486 12.8661 12.883C13.1005 13.1175 13.4185 13.2492 13.75 13.2492C14.0815 13.2492 14.3995 13.1175 14.6339 12.883C14.8683 12.6486 15 12.3307 15 11.9992C15 11.6676 14.8683 11.3497 14.6339 11.1153C14.3995 10.8809 14.0815 10.7492 13.75 10.7492ZM10.2125 10.7492C10.4708 10.0172 10.9497 9.38345 11.5833 8.93514C12.2168 8.48684 12.9739 8.24609 13.75 8.24609C14.5261 8.24609 15.2832 8.48684 15.9167 8.93514C16.5503 9.38345 17.0292 10.0172 17.2875 10.7492H18.75C19.0815 10.7492 19.3995 10.8809 19.6339 11.1153C19.8683 11.3497 20 11.6676 20 11.9992C20 12.3307 19.8683 12.6486 19.6339 12.883C19.3995 13.1175 19.0815 13.2492 18.75 13.2492H17.2875C17.0292 13.9811 16.5503 14.6149 15.9167 15.0632C15.2832 15.5115 14.5261 15.7522 13.75 15.7522C12.9739 15.7522 12.2168 15.5115 11.5833 15.0632C10.9497 14.6149 10.4708 13.9811 10.2125 13.2492H1.25C0.918479 13.2492 0.600537 13.1175 0.366117 12.883C0.131696 12.6486 0 12.3307 0 11.9992C0 11.6676 0.131696 11.3497 0.366117 11.1153C0.600537 10.8809 0.918479 10.7492 1.25 10.7492H10.2125ZM6.25 18.2492C5.91848 18.2492 5.60054 18.3809 5.36612 18.6153C5.1317 18.8497 5 19.1676 5 19.4992C5 19.8307 5.1317 20.1486 5.36612 20.383C5.60054 20.6175 5.91848 20.7492 6.25 20.7492C6.58152 20.7492 6.89946 20.6175 7.13388 20.383C7.3683 20.1486 7.5 19.8307 7.5 19.4992C7.5 19.1676 7.3683 18.8497 7.13388 18.6153C6.89946 18.3809 6.58152 18.2492 6.25 18.2492ZM2.7125 18.2492C2.97075 17.5172 3.44967 16.8834 4.08325 16.4351C4.71683 15.9868 5.47386 15.7461 6.25 15.7461C7.02614 15.7461 7.78317 15.9868 8.41675 16.4351C9.05033 16.8834 9.52925 17.5172 9.7875 18.2492H18.75C19.0815 18.2492 19.3995 18.3809 19.6339 18.6153C19.8683 18.8497 20 19.1676 20 19.4992C20 19.8307 19.8683 20.1486 19.6339 20.383C19.3995 20.6175 19.0815 20.7492 18.75 20.7492H9.7875C9.52925 21.4811 9.05033 22.1149 8.41675 22.5632C7.78317 23.0115 7.02614 23.2522 6.25 23.2522C5.47386 23.2522 4.71683 23.0115 4.08325 22.5632C3.44967 22.1149 2.97075 21.4811 2.7125 20.7492H1.25C0.918479 20.7492 0.600537 20.6175 0.366117 20.383C0.131696 20.1486 0 19.8307 0 19.4992C0 19.1676 0.131696 18.8497 0.366117 18.6153C0.600537 18.3809 0.918479 18.2492 1.25 18.2492H2.7125Z" fill="white" />
+</svg></span>
+              <span><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22.5 25C21.837 25 21.2011 24.7366 20.7322 24.2678C20.2634 23.7989 20 23.163 20 22.5C20 21.837 20.2634 21.2011 20.7322 20.7322C21.2011 20.2634 21.837 20 22.5 20C23.163 20 23.7989 20.2634 24.2678 20.7322C24.7366 21.2011 25 21.837 25 22.5C25 23.163 24.7366 23.7989 24.2678 24.2678C23.7989 24.7366 23.163 25 22.5 25ZM15 25C14.337 25 13.7011 24.7366 13.2322 24.2678C12.7634 23.7989 12.5 23.163 12.5 22.5C12.5 21.837 12.7634 21.2011 13.2322 20.7322C13.7011 20.2634 14.337 20 15 20C15.663 20 16.2989 20.2634 16.7678 20.7322C17.2366 21.2011 17.5 21.837 17.5 22.5C17.5 23.163 17.2366 23.7989 16.7678 24.2678C16.2989 24.7366 15.663 25 15 25ZM7.5 25C6.83696 25 6.20107 24.7366 5.73223 24.2678C5.26339 23.7989 5 23.163 5 22.5C5 21.837 5.26339 21.2011 5.73223 20.7322C6.20107 20.2634 6.83696 20 7.5 20C8.16304 20 8.79893 20.2634 9.26777 20.7322C9.73661 21.2011 10 21.837 10 22.5C10 23.163 9.73661 23.7989 9.26777 24.2678C8.79893 24.7366 8.16304 25 7.5 25ZM22.5 17.5C21.837 17.5 21.2011 17.2366 20.7322 16.7678C20.2634 16.2989 20 15.663 20 15C20 14.337 20.2634 13.7011 20.7322 13.2322C21.2011 12.7634 21.837 12.5 22.5 12.5C23.163 12.5 23.7989 12.7634 24.2678 13.2322C24.7366 13.7011 25 14.337 25 15C25 15.663 24.7366 16.2989 24.2678 16.7678C23.7989 17.2366 23.163 17.5 22.5 17.5ZM15 17.5C14.337 17.5 13.7011 17.2366 13.2322 16.7678C12.7634 16.2989 12.5 15.663 12.5 15C12.5 14.337 12.7634 13.7011 13.2322 13.2322C13.7011 12.7634 14.337 12.5 15 12.5C15.663 12.5 16.2989 12.7634 16.7678 13.2322C17.2366 13.7011 17.5 14.337 17.5 15C17.5 15.663 17.2366 16.2989 16.7678 16.7678C16.2989 17.2366 15.663 17.5 15 17.5ZM7.5 17.5C6.83696 17.5 6.20107 17.2366 5.73223 16.7678C5.26339 16.2989 5 15.663 5 15C5 14.337 5.26339 13.7011 5.73223 13.2322C6.20107 12.7634 6.83696 12.5 7.5 12.5C8.16304 12.5 8.79893 12.7634 9.26777 13.2322C9.73661 13.7011 10 14.337 10 15C10 15.663 9.73661 16.2989 9.26777 16.7678C8.79893 17.2366 8.16304 17.5 7.5 17.5ZM22.5 10C21.837 10 21.2011 9.73661 20.7322 9.26777C20.2634 8.79893 20 8.16304 20 7.5C20 6.83696 20.2634 6.20107 20.7322 5.73223C21.2011 5.26339 21.837 5 22.5 5C23.163 5 23.7989 5.26339 24.2678 5.73223C24.7366 6.20107 25 6.83696 25 7.5C25 8.16304 24.7366 8.79893 24.2678 9.26777C23.7989 9.73661 23.163 10 22.5 10ZM15 10C14.337 10 13.7011 9.73661 13.2322 9.26777C12.7634 8.79893 12.5 8.16304 12.5 7.5C12.5 6.83696 12.7634 6.20107 13.2322 5.73223C13.7011 5.26339 14.337 5 15 5C15.663 5 16.2989 5.26339 16.7678 5.73223C17.2366 6.20107 17.5 6.83696 17.5 7.5C17.5 8.16304 17.2366 8.79893 16.7678 9.26777C16.2989 9.73661 15.663 10 15 10ZM7.5 10C6.83696 10 6.20107 9.73661 5.73223 9.26777C5.26339 8.79893 5 8.16304 5 7.5C5 6.83696 5.26339 6.20107 5.73223 5.73223C6.20107 5.26339 6.83696 5 7.5 5C8.16304 5 8.79893 5.26339 9.26777 5.73223C9.73661 6.20107 10 6.83696 10 7.5C10 8.16304 9.73661 8.79893 9.26777 9.26777C8.79893 9.73661 8.16304 10 7.5 10Z" fill="white" />
+</svg></span>
+            </div>
+
+            <div class="shop-drop">
+              <select name="dropdown" id="dropdown">
+                <option value="Default sorting">Default sorting</option>
+                <option value="n">New</option>
+                <option value="Default sorting">Default sorting</option>
+                <option value="Default sorting">Default sorting</option>
+              </select>
+            </div>
+          </div>
+           <div class="shop-product">
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                    
+                </div>
+                <div class="img-shop-text">
+                      <p>New</p>
+                    </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span>(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span>(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                </div>
+                <div class="img-shop-text">
+                      <p>New</p>
+                    </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span class="num-5">(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span>(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+           </div>
+           <div class="shop-product">
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span>(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                </div>
+                <div class="img-shop-text">
+                      <p>New</p>
+                    </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span>(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                </div>
+                <div class="img-shop-text">
+                      <p>Sale</p>
+                    </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span class="num-5">(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                </div>
+                <div class="img-shop-text">
+                      <p>-45%</p>
+                    </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span>(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+           </div>
+           <div class="shop-product">
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                </div>
+                <div class="img-shop-text">
+                      <p>Sale</p>
+                    </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span>(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span>(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span class="num-5">(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+            <div class="shop-child">
+                <div class="shop-image">
+                    <img src="./asstes/image/shop-grid/1.jpg" alt="">
+                </div>
+                <div class="img-shop-text">
+                      <p>New</p>
+                    </div>
+                <div class="shop-icon">
+                    <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart">
+  
+                      </i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="shop-text">
+                        <div class="star">
+                            <h4>Spaghetti Hoodie</h4>
+                        <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><span>(5)</span>
+                </span>
+                        </div>
+                        <p>$125.65</p>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+     <!-- ===================================<<<<<<<<<<SHOP PRODUCT END>>>>>>>>>>================================== -->
+
+
+
+
+
+    <!-- ==================================<<<<<<<<<<ABOUT SECTION FOOTER START>>>>>>>>>>================================= -->
+     <footer id="footer-all">
+                <div class="container">
+                  <div class="row contains-one">
+                    <div class="col-lg-6 one">
+                      <h2>Subscribe to Our Newsletter!</h2>
+                      <p>Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.</p>
+                    </div>
+                    <div class="col-lg-6 tow">
+                      <input type="email" placeholder="Enter your email...."><button class="footer-btns">Subscribe</button>
+                    </div>
+                  </div>
+
+                  <div class="row contains-tow">
+                    <div class="col-lg-3 one">
+                      <span><a href="#"><img src="./asstes/Logo.png" alt=""></a></span>
+                      <p>Progressively optimize effective ideas before turnkey process improvements. Proactively disseminate</p>
+
+                       <ul class="all-footer-icons">
+                              <li><a href="#"><i class="fa-brands fa-facebook"></i> </a></li>
+                              <li><a href="#"><i class="fa-brands fa-twitter"></i> </a></li>
+                              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                              <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                       </ul>
+                    </div>
+                    <div class="col-lg-2 tow">
+                      <h4>My Account</h4>
+                          <ul>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> My Account</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> View Cart</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Wishlist</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Compare</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> New Products</a></li>
+                          </ul>
+                    </div>
+                    <div class="col-lg-2 three">
+                      <h4>Support</h4>
+                          <ul>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Help</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Contact Us</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Feedback</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Customer Service</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Store Locations</a></li>
+                          </ul>
+                    </div>
+                    <div class="col-lg-2 four">
+                      <h4>Shop</h4>
+                          <ul>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Men’s Shopping</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Women’s Shopping</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Kids’ Shopping</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> Discounts</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span> New Arrivels</a></li>
+                          </ul>
+                    </div>
+                    <div class="col-lg-3 five">
+                       <h4>Contact Us</h4>
+                          <ul>
+                            <li><a href="#"><span><i class="fa-solid fa-location-dot"></i> </span> 830 Broad way, New York, NY 10003, United States</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-phone"></i> </span> +18008660286</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-envelope"></i> </span> aetor.info@gmail.com</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-globe"></i> </span> info@aetor.com</a></li>
+                          </ul>
+                    </div>
+                  </div>
+
+                  <div class="row contains-three">
+                    <div class="col-lg-6 one">
+                      
+                  <p>© 2022 All Rights Reserved <b>Aytor</b> By <b>Angfuzsoft.</b></p>
+                    </div>
+                  <div class="col-lg-6 tow">
+                    <ul>
+                              <li><a href="#"><i class="fa-brands fa-cc-paypal"></i> </a></li>
+                              <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i> </a></li>
+                              <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                              <li><a href="#"><i class="fa-brands fa-cc-discover"></i></a></li>
+                              </ul>
+                  </div>
+                            </div>
+                </div>
+     </footer>
+    <!-- ===================================<<<<<<<<<<ABOUT SECTION FOOTER END>>>>>>>>>>================================== -->
+
+     <!-- JQUERY -->
+    <script src="./asstes/js/jquery-3.7.1.min.js"></script>
+    
+    <!-- SLICK SLIDER -->
+    <script src="./asstes/js/slick.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="./asstes/js/bootstrap.bundle.min.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="./asstes/js/app.js"></script>       
+</body>
+</html>

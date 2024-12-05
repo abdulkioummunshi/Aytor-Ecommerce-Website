@@ -1,0 +1,262 @@
+@media (min-width: 1025px) {
+    .col-lg-3 {
+    flex : 0 0 auto;
+    width: 25%;
+    margin-bottom:24px;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .col-lg-3 {
+    flex : 0 0 auto;
+    width: 50%;
+    margin-bottom: 24px;
+}
+#best-seller .card .best-seller-image img{
+    padding: auto;
+}
+}
+@media (max-width: 767px) {
+    .col-lg-3 {
+    flex : 0 0 auto;
+    width: 100%;
+    margin-bottom: 24px;
+}
+}
+
+/* ====================<<<<<<<<<<<<ALL PAGE FOOTER CSS START>>>>>>>>>>>>>>>================================ */
+
+@media (max-width: 575px) {
+    
+    /* BANNER START */
+#banner .parent .banner_slider .container h4 {
+    font-size  : 18px;
+}
+#banner .parent .banner_slider .container h2 {
+    font-size  : 34px;
+}
+#banner .parent .banner_slider .container p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size  : 14px;
+}
+    /* BANNER END */
+    /* NEW ARRIVLE PRODUCT START */
+
+#product .parent-product .child-product {
+    
+}
+    /* NEW ARRIVLE PRODUCT END */
+
+    /* SPA START */
+
+#spa-cosmetics .spa-contains h4 {
+    font-size          : 22px;
+    /* width              : 400px; */
+}
+
+#spa-cosmetics .spa-contains P {
+    font-size          : 16px;
+    /* width              : 400px; */
+}
+    /* SPA END */
+
+    /* DEALS START */
+
+#deals .deals-parent .deals .deals-contains{
+    left: 10px;
+}
+#deals .deals-parent .deals .deals-contains h4 {
+    font-size          : 22px;
+}
+#deals .deals-parent .deals .deals-contains h2 {
+    font-size          : 20px;
+}
+#deals .deals-parent .deals .deals-contains P {
+    font-size          : 16px;
+    width: 300px;
+}
+    /* DEALS END */
+
+    /* HOME FOOTER START */
+/* #footer .over-icon {
+    background-color: greenyellow;
+    height        : auto;
+    display       : flex;
+    flex-direction: column;
+    top: 0px;
+    margin-bottom: 50px;
+
+} */
+#footer{
+    height: 1000px;
+    /* position: relative; */
+}
+#footer .all-ft{
+    margin-top: 200px;
+}
+#footer .over-icon {
+    /* background-color: greenyellow; */
+    height        : auto;
+    /* position      : absolute; */
+    /* left          : 0; */
+    /* top           : -100px; */
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+    box-shadow    : 0 0 50px 0 rgba(21, 26, 50, 0.1);
+    background    : var(--comon-colot);
+    margin-bottom: 100px;
+}
+
+#footer .over-icon .over-contains {
+    /* background-color: rgb(228, 192, 12); */
+    height         : 100%;
+    justify-content: center;
+    display        : flex;
+    align-items    : center;
+    margin         : 0;
+    padding        : 0;
+    /* width       : 100%; */
+}
+
+#footer .over-icon .over-contains ul {
+    /* align-items: start; */
+    border-right    : none;
+    background-color: red;
+}
+
+#footer .over-icon .over-contains ul li h4 {
+    font-size  : 18px;
+}
+#footer .over-icon .over-contains ul li p{
+    font-size  : 14px;
+}
+
+#footer .footer-icons .one{
+    display            : flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+}
+    /* HOME FOOTER END */
+
+    /* ---- ALL FOOTER START */
+
+    #footer-all .contains-one .one h2 {
+    font-size  : 20px;
+}
+#footer-all .contains-one .one p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 175%;
+    color      : var(--paragraph-color);
+    width      : 350px;
+}
+#footer-all .contains-one .tow {
+    display            : flex;
+    flex-direction: column;
+    justify-content    : center;
+    align-items        : center;
+    padding-right      : 10px;
+}
+#footer-all .contains-one .tow input {
+    width                : 100%;
+    font-size: 14px;
+}
+#footer-all .contains-one .tow .footer-btns {
+    width                : 100%;
+    font-size            : 14px;
+}
+    /* ----FOOTER END */
+
+    /* SHOP GRID START */
+#shop .shop-product {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* SHOP GRID END */
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    /* BANNER START */
+#banner .parent .banner_slider .container h4 {
+    font-size: 18px;
+}
+
+#banner .parent .banner_slider .container h2 {
+    font-size: 40px;
+}
+
+/* BANNER END */
+    #footer-all .contains-one .one h2 {
+    font-size: 22px;
+}
+    #footer-all .contains-one .one p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size  : 16px;
+    line-height: 175%;
+    color      : var(--paragraph-color);
+    width      : 350px;
+}
+
+/* SHOP GRID START */
+#shop .shop-product {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* SHOP GRID END */
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #footer-all .contains-one .one h2 {
+    font-size: 24px;
+}
+#footer-all .contains-one .one p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size  : 16px;
+    line-height: 175%;
+    color      : var(--paragraph-color);
+    width      : 350px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #footer-all .contains-one .one h2 {
+    font-size: 26px;
+}
+#footer-all .contains-one .one p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size  : 18px;
+    line-height: 175%;
+    color      : var(--paragraph-color);
+    width      : 350px;
+}
+#leadership .leader-contains {
+    width: 50%;
+}
+}
+
+@media (min-width: 1200px) {
+    #footer-all .contains-one .one h2 {
+    font-size: 28px;
+}
+#footer-all .contains-one .one p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size  : 18px;
+    line-height: 175%;
+    color      : var(--paragraph-color);
+    width      : 350px;
+}
+
+
+}
+
+
+/* ====================<<<<<<<<<<<<ALL PAGE FOOTER CSS END>>>>>>>>>>>>>>>>>>================================ */
