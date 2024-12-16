@@ -440,6 +440,14 @@
 #shop .shop-product {
     grid-template-columns: repeat(1, 1fr);
 }
+#shop .menu-btn-shop .shop-drop{
+    width: 200px;
+}
+#shop .menu-btn-shop .shop-drop select{
+    width: 200px;
+    height: 50px;
+    /* float: right; */
+}
 
 /* SHOP GRID END */
 

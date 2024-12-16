@@ -3626,7 +3626,7 @@ footer .over-icon .over-contains {
 }
 
 #shop .menu-btn-shop .shop-drop {
-    background: rgb(251, 3, 189);
+    /* background: rgb(251, 3, 189); */
     width     : 400px;
     display   : flex;
 
