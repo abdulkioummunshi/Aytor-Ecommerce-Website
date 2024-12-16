@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- SLCIK SLIDER START -->
+    <link rel="stylesheet" href="./asstes/css/slick.min.css" />
+    <!-- SLCIK SLIDER END -->
+    <!-- GOOGLE FONTS START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE FONTS END -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONTAWESOME CSS -->
+    <link rel="stylesheet" href="asstes/css/font-awesome-all.min.css" />
+    <!-- BOOTSTRAP 5.3 -->
+    <link rel="stylesheet" href="asstes/css/bootstrap.min.css" />
+
+    <!-- CUSTOM STYLE -->
+    <!-- <link rel="stylesheet" href="./asstes/css/style.css" /> -->
+    <!--  RESPONSIVE CSS -->
+    <link rel="stylesheet" href="./asstes/css/responsive.css" />
+    <link rel="stylesheet" href="./asstes/css/">
+  <style>
+    /* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 products per row */
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product-image {
+  position: relative;
+  padding: 10px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: orange;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.product-details h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 14px;
+}
+
+.current-price {
+  color: red;
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-left: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Responsive Styles */
+
+/* For tablets (2 products per row) */
+@media (max-width: 992px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 products per row */
+  }
+}
+
+/* For mobile devices (1 product per row) */
+@media (max-width: 600px) {
+  .product-container {
+    grid-template-columns: 1fr; /* 1 product per row */
+  }
+
+  .product {
+    margin-bottom: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="product">
+          <div class="container">
+            <div class="product-name">
+              <h2>New Arrivals Products</h2>
+            </div>
+            <div class="parent-product">
+
+              <div class="child-product child-1">
+                <div class="product-image">
+                  <img src="./asstes/image/new product/1.jpg" alt="">
+                  <img src="./asstes/image/new product/bg1.png" alt="">
+                </div>
+                <div class="product-contains">
+                <p>$150.65</p>
+                <h4>Lotion Shower gel</h4>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                </div>
+                <div class="product-icons">
+                  <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart"></i></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                <div class="text">
+                    <p>Sale</p>
+                  </div>
+              </div>
+
+              <div class="child-product col-lg-3">
+                <div class="product-image">
+                  <img src="./asstes/image/new product/1.jpg" alt="">
+                  <img src="./asstes/image/new product/bg1.png" alt="">
+                </div>
+                <div class="product-contains">
+                <p>$150.65</p>
+                <h4>Lotion Shower gel</h4>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                </div>
+                <div class="product-icons">
+                  <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart"></i></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                <div class="text">
+                    <p>Sale</p>
+                  </div>
+              </div>
+              
+               <div class="child-product col-lg-3">
+                <div class="product-image">
+                  <img src="./asstes/image/new product/1.jpg" alt="">
+                  <img src="./asstes/image/new product/bg1.png" alt="">
+                </div>
+                <div class="product-contains">
+                <p>$150.65</p>
+                <h4>Lotion Shower gel</h4>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                </div>
+                <div class="product-icons">
+                  <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart"></i></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                <div class="text">
+                    <p>Sale</p>
+                  </div>
+              </div>
+               <div class="child-product col-lg-3">
+                <div class="product-image">
+                  <img src="./asstes/image/new product/1.jpg" alt="">
+                  <img src="./asstes/image/new product/bg1.png" alt="">
+                </div>
+                <div class="product-contains">
+                <p>$150.65</p>
+                <h4>Lotion Shower gel</h4>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                </div>
+                <div class="product-icons">
+                  <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart"></i></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                <div class="text">
+                    <p>Sale</p>
+                  </div>
+              </div>
+               <div class="child-product child-2 col-lg-3">
+                <div class="product-image">
+                  <img src="./asstes/image/new product/1.jpg" alt="">
+                  <img src="./asstes/image/new product/bg1.png" alt="">
+                </div>
+                <div class="product-contains">
+                <p>$150.65</p>
+                <h4>Lotion Shower gel</h4>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                </div>
+                <div class="product-icons">
+                  <ul>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Card" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist" href="#"><i class="fa-solid fa-heart"></i></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Qick View" href="#"><i class="fa-solid fa-eye"></i></a>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="tooltip" data-bs-placement="left" title="Compaire" href="#"><i class="fa-solid fa-signal"></i></a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                <div class="text">
+                    <p>Sale</p>
+                  </div>
+              </div>
+              
+             
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="product-container">
+  <!-- Product Card Example -->
+  <div class="product">
+    <div class="product-image">
+      <img src="./asstes/image/shop-grid/1.jpg" alt="Spaghetti Hoodie">
+      <span class="badge sale">-45%</span>
+    </div>
+    <div class="product-details">
+      <h3>Spaghetti Hoodie</h3>
+      <div class="product-price">
+        <span class="current-price">$180.85</span>
+        <span class="original-price">$350.99</span>
+      </div>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-image">
+      <img src="./asstes/image/shop-grid/1.jpg" alt="Spaghetti Hoodie">
+      <span class="badge sale">-45%</span>
+    </div>
+    <div class="product-details">
+      <h3>Spaghetti Hoodie</h3>
+      <div class="product-price">
+        <span class="current-price">$180.85</span>
+        <span class="original-price">$350.99</span>
+      </div>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-image">
+      <img src="./asstes/image/shop-grid/1.jpg" alt="Spaghetti Hoodie">
+      <span class="badge sale">-45%</span>
+    </div>
+    <div class="product-details">
+      <h3>Spaghetti Hoodie</h3>
+      <div class="product-price">
+        <span class="current-price">$180.85</span>
+        <span class="original-price">$350.99</span>
+      </div>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-image">
+      <img src="./asstes/image/shop-grid/1.jpg" alt="Spaghetti Hoodie">
+      <span class="badge sale">-45%</span>
+    </div>
+    <div class="product-details">
+      <h3>Spaghetti Hoodie</h3>
+      <div class="product-price">
+        <span class="current-price">$180.85</span>
+        <span class="original-price">$350.99</span>
+      </div>
+    </div>
+  </div>
+  <!-- Repeat for other products -->
+</div>
+
+<!-- Pagination -->
+<div class="pagination">
+  <button>&laquo; Prev</button>
+  <button class="active">1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>Next &raquo;</button>
+</div>
+
+  </div>
+  
+
+
+
+
+
+
+
+
+
+   <script src="./asstes/js/jquery-3.7.1.min.js"></script>
+    <!-- SLICK SLIDER -->
+    <script src="./asstes/js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <script src="./asstes/js/bootstrap.bundle.min.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="./asstes/js/app.js"></script>
+</body>
+</html>
