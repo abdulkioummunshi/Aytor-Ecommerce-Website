@@ -193,7 +193,50 @@
     margin-bottom: 24px;
 }
 
+    /* POPUP START */
 
+    #popup .popup-contains {
+
+        width : 300px;
+        height: 500px;
+    }
+
+    #popup .popup-contains h4 {
+        font-size: 20px;
+    }
+
+    #popup .popup-contains p {
+        font-size: 14px;
+        width    : 280px;
+    }
+
+    #popup .popup-contains .sub {
+        text-align: center;
+    }
+
+    #popup .popup-contains .sub input {
+        width  : 290px;
+        padding: 5px;
+    }
+
+    #popup .popup-contains .sub .sub-btn {
+        width       : 290px;
+        margin-top  : 10px;
+        padding     : 5px;
+        padding-left: 0px;
+        margin-left : 0px;
+        display     : inline-block;
+        text-align  : center;
+    }
+
+    #popup .popup-cross {
+        position: absolute;
+        top     : 10px;
+        right   : 10px;
+        border  : none !important;
+    }
+
+    /* POPUP END */
 
 /* CONTACT START */
 #contact .contact-details .contact-box {
