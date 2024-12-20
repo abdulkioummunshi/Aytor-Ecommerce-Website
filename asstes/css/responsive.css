@@ -450,7 +450,12 @@
 }
 
 /* SHOP GRID END */
-
+#compare .scroll-tab{
+    width: 100%!important;
+    overflow: scroll;
+    padding: 0;
+    margin-left: -20px;
+}
 
 /* =======ALL FOOTER START======== */
 #footer-all .contains-tow .one span {

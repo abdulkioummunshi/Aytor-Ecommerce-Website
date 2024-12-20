@@ -47,3 +47,5 @@ dec.addEventListener("click", function () {
     }
 });
 /**-----------SHOPDETAIS END--------- */
+
+
